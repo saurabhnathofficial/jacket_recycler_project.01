@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    height: 120vh;
+    width: 95%;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    margin: 0px 16px;
+    font-size: 14px;
+}
+
+nav :nth-child(4) {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+nav a:hover {
+    border-bottom: 3px solid black;
+}
+
+section {
+    width: 40%;
+    margin-top: 3%;
+}
+
+section h1 {
+    font-size: 4.2vw;
+    font-weight: 400;
+    /* line-height: 38px; */
+    line-height: 4.2vw;
+
+}
+
+aside {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 30%;
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 2vw;
+}
+
+.right {
+    width: 25%;
+}
+
+.right a {
+    display: block;
+    border-top: 3px solid rgb(197 197 197);
+    padding: 20px 20px 20px 0px;
+    text-decoration: none;
+    color: #565151;
+}
+
+.right a i {
+    float: right;
+    font-size: 23px;
+    display: none;
+
+}
+
+.right a:hover i {
+    display: initial;
+}
+
+footer {
+    margin-top: 40px;
+    height: 40%;
+    background-image: url('https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: calc(20px);
+}
+
+@media (max-width:600px) {
+    nav {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        margin: 0px 8px;
+        font-size: 12px;
+    }
+
+    section {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    section h1 {
+        font-size: 11.2vw;
+        font-weight: 400;
+        /* line-height: 38px; */
+        line-height: 12.2vw;
+
+    }
+
+    aside {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left p {
+        font-size: 12px;
+        width: 300px;
+        line-height: 4.2vw;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .right a {
+        border-top: none;
+        border-bottom: 3px solid rgb(197 197 197);
+    }
+
+    .right a i {
+        font-size: 20px;
+    }
+
+    footer {
+        background-position: center;
+    }
+}
